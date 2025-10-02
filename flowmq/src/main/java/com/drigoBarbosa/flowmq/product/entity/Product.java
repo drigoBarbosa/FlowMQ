@@ -1,4 +1,4 @@
-package com.drigoBarbosa.flowmq.client.model.entity;
+package com.drigoBarbosa.flowmq.product.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,16 +12,16 @@ import lombok.NoArgsConstructor;
 import java.util.UUID;
 
 @Entity
-@Table(name = "tb_clients")
+@Table(name = "tb_products")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Client {
+public class Product {
 
     @Id
     @GeneratedValue
     UUID id;
     String name;
-
+    String code;
 }
