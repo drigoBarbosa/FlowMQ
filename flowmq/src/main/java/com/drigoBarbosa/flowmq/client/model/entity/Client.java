@@ -23,5 +23,7 @@ public class Client {
     @GeneratedValue
     UUID id;
     String name;
+    String cpf;
+    String email;
 
 }
